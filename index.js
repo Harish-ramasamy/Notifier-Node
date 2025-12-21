@@ -12,7 +12,8 @@ const intervel = 30 * 1000;
 console.log("notify started..")
 setInterval(() => {
     const index = Math.floor(Math.random()*reminderMessages.length);
-    console.log(index);
+    const msg = reminderMessages[index];
+    console.log(msg);
     notify.notify({
       title: 'Health Reminder',
       message: msg,
