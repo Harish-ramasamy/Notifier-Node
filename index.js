@@ -6,7 +6,7 @@ const msgPath = path.join(__dirname,"message.json");
 const msgJson = JSON.parse(fs.readFileSync(msgPath));
 const reminderMessages = msgJson.messages;
 
-const intervel = 30 * 1000;
+const intervel = 15 * 60 * 1000
 
 
 console.log("notify started..")
